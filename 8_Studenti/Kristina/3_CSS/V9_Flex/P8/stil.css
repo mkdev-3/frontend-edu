@@ -25,3 +25,6 @@ body {
   flex-wrap: wrap;
   align-content: space-evenly;
 }
+.flex8:nth-child(3) {
+  order: -1;
+}
