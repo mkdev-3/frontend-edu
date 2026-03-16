@@ -42,4 +42,8 @@ section .odlomak {
 
 footer {
   margin: 1em 0 2em 5em;
+}
+
+.odlomak {
+  border: 8px dotted #333;
 }/*# sourceMappingURL=stil.css.map */
