@@ -28,4 +28,25 @@ div:nth-child(2) {
 }
 div:nth-child(3) {
   animation: fade 0.5s ease-in infinite;
+}
+div:nth-child(4) {
+  transition: background-color 5s ease;
+}
+div:nth-child(4):hover {
+  background-color: rgb(150, 0, 0);
+}
+div:nth-child(5) {
+  transition: width 5s ease;
+}
+div:nth-child(5) hover {
+  width: 80%;
+}
+div:nth-child(6) {
+  transition: transform 2s ease;
+}
+div:nth-child(6):hover {
+  transform: translate(150px, 0);
+}
+div:nth-child(7) {
+  background-image: linear-gradient(red, yellow, green);
 }/*# sourceMappingURL=stil.css.map */

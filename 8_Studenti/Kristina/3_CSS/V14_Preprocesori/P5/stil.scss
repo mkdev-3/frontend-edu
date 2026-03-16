@@ -12,6 +12,14 @@ $color2: rgb(150, 150, 0);
 @mixin transition($args) {
   transition: $args;
 }
+@mixin lingrad($argumenti...) {
+  // background-image: linear-gradient($argumenti);
+  background-image: linear-gradient(
+    nth($argumenti, 1),
+    nth($argumenti, 2),
+    nth($argumenti, 3) nth($argumenti, 4)
+  );
+}
 @include keyframes(fade) {
   0% {
     opacity: 1;
@@ -49,7 +57,7 @@ div {
   }
   &:nth-child(5) {
     @include transition(width 5s ease);
-    & hover {
+    &:hover {
       width: 80%;
     }
   }
@@ -58,5 +66,13 @@ div {
     &:hover {
       transform: translate(150px, 0);
     }
+  }
+  &:nth-child(7) {
+    @include lineargrad(
+      to right,
+      red,
+      yellow,
+      green
+    ); // background-image: linear-gradient(to right, red, yellow, green);
   }
 }
